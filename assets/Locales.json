@@ -1,0 +1,1117 @@
+[
+ {
+   "code": "1025",
+   "description": "Arabic - Saudi Arabia",
+   "label": "ar-SA"
+ },
+ {
+   "code": "1026",
+   "description": "Bulgarian",
+   "label": "bg-BG"
+ },
+ {
+   "code": "1027",
+   "description": "Catalan",
+   "label": "ca-ES"
+ },
+ {
+   "code": "1028",
+   "description": "Chinese - Taiwan",
+   "label": "zh-TW"
+ },
+ {
+   "code": "1029",
+   "description": "Czech",
+   "label": "cs-CZ"
+ },
+ {
+   "code": "1030",
+   "description": "Danish",
+   "label": "da-DK"
+ },
+ {
+   "code": "1031",
+   "description": "German - Germany",
+   "label": "de-DE"
+ },
+ {
+   "code": "1032",
+   "description": "Greek",
+   "label": "el-GR"
+ },
+ {
+   "code": "1033",
+   "description": "English - United States",
+   "label": "en-US"
+ },
+ {
+   "code": "1034",
+   "description": "Spanish - Spain (Traditional Sort)",
+   "label": "es-ES"
+ },
+ {
+   "code": "1035",
+   "description": "Finnish",
+   "label": "fi-FI"
+ },
+ {
+   "code": "1036",
+   "description": "French - France",
+   "label": "fr-FR"
+ },
+ {
+   "code": "1037",
+   "description": "Hebrew",
+   "label": "he-IL"
+ },
+ {
+   "code": "1038",
+   "description": "Hungarian",
+   "label": "hu-HU"
+ },
+ {
+   "code": "1039",
+   "description": "Icelandic",
+   "label": "is-IS"
+ },
+ {
+   "code": "1040",
+   "description": "Italian - Italy",
+   "label": "it-IT"
+ },
+ {
+   "code": "1041",
+   "description": "Japanese",
+   "label": "ja-JP"
+ },
+ {
+   "code": "1042",
+   "description": "Korean",
+   "label": "ko-KR"
+ },
+ {
+   "code": "1043",
+   "description": "Dutch - Netherlands",
+   "label": "nl-NL"
+ },
+ {
+   "code": "1044",
+   "description": "Norwegian (Bokmål)",
+   "label": "nb-NO"
+ },
+ {
+   "code": "1045",
+   "description": "Polish",
+   "label": "pl-PL"
+ },
+ {
+   "code": "1046",
+   "description": "Portuguese - Brazil",
+   "label": "pt-BR"
+ },
+ {
+   "code": "1047",
+   "description": "Rhaeto-Romanic",
+   "label": "rm-CH"
+ },
+ {
+   "code": "1048",
+   "description": "Romanian",
+   "label": "ro-RO"
+ },
+ {
+   "code": "1049",
+   "description": "Russian",
+   "label": "ru-RU"
+ },
+ {
+   "code": "1050",
+   "description": "Croatian",
+   "label": "hr-HR"
+ },
+ {
+   "code": "1051",
+   "description": "Slovak",
+   "label": "sk-SK"
+ },
+ {
+   "code": "1052",
+   "description": "Albanian - Albania",
+   "label": "sq-AL"
+ },
+ {
+   "code": "1053",
+   "description": "Swedish",
+   "label": "sv-SE"
+ },
+ {
+   "code": "1054",
+   "description": "Thai",
+   "label": "th-TH"
+ },
+ {
+   "code": "1055",
+   "description": "Turkish",
+   "label": "tr-TR"
+ },
+ {
+   "code": "1056",
+   "description": "Urdu - Pakistan",
+   "label": "ur-PK"
+ },
+ {
+   "code": "1057",
+   "description": "Indonesian",
+   "label": "id-ID"
+ },
+ {
+   "code": "1058",
+   "description": "Ukrainian",
+   "label": "uk-UA"
+ },
+ {
+   "code": "1059",
+   "description": "Belarusian",
+   "label": "be-BY"
+ },
+ {
+   "code": "1060",
+   "description": "Slovenian",
+   "label": "sl-SI"
+ },
+ {
+   "code": "1061",
+   "description": "Estonian",
+   "label": "et-EE"
+ },
+ {
+   "code": "1062",
+   "description": "Latvian",
+   "label": "lv-LV"
+ },
+ {
+   "code": "1063",
+   "description": "Lithuanian",
+   "label": "lt-LT"
+ },
+ {
+   "code": "1064",
+   "description": "Tajik",
+   "label": "tg-Cyrl-TJ"
+ },
+ {
+   "code": "1065",
+   "description": "Persian",
+   "label": "fa-IR"
+ },
+ {
+   "code": "1066",
+   "description": "Vietnamese",
+   "label": "vi-VN"
+ },
+ {
+   "code": "1067",
+   "description": "Armenian - Armenia",
+   "label": "hy-AM"
+ },
+ {
+   "code": "1068",
+   "description": "Azeri (Latin)",
+   "label": "az-Latn-AZ"
+ },
+ {
+   "code": "1069",
+   "description": "Basque",
+   "label": "eu-ES"
+ },
+ {
+   "code": "1070",
+   "description": "Sorbian",
+   "label": "wen-DE"
+ },
+ {
+   "code": "1071",
+   "description": "F.Y.R.O. Macedonian",
+   "label": "mk-MK"
+ },
+ {
+   "code": "1072",
+   "description": "Sutu",
+   "label": "st-ZA"
+ },
+ {
+   "code": "1073",
+   "description": "Tsonga",
+   "label": "ts-ZA"
+ },
+ {
+   "code": "1074",
+   "description": "Tswana",
+   "label": "tn-ZA"
+ },
+ {
+   "code": "1075",
+   "description": "Venda",
+   "label": "ven-ZA"
+ },
+ {
+   "code": "1076",
+   "description": "Xhosa",
+   "label": "xh-ZA"
+ },
+ {
+   "code": "1077",
+   "description": "Zulu",
+   "label": "zu-ZA"
+ },
+ {
+   "code": "1078",
+   "description": "Afrikaans - South Africa",
+   "label": "af-ZA"
+ },
+ {
+   "code": "1079",
+   "description": "Georgian",
+   "label": "ka-GE"
+ },
+ {
+   "code": "1080",
+   "description": "Faroese",
+   "label": "fo-FO"
+ },
+ {
+   "code": "1081",
+   "description": "Hindi",
+   "label": "hi-IN"
+ },
+ {
+   "code": "1082",
+   "description": "Maltese",
+   "label": "mt-MT"
+ },
+ {
+   "code": "1083",
+   "description": "Sami",
+   "label": "se-NO"
+ },
+ {
+   "code": "1084",
+   "description": "Gaelic (Scotland)",
+   "label": "gd-GB"
+ },
+ {
+   "code": "1085",
+   "description": "Yiddish",
+   "label": "yi"
+ },
+ {
+   "code": "1086",
+   "description": "Malay - Malaysia",
+   "label": "ms-MY"
+ },
+ {
+   "code": "1087",
+   "description": "Kazakh",
+   "label": "kk-KZ"
+ },
+ {
+   "code": "1088",
+   "description": "Kyrgyz (Cyrillic)",
+   "label": "ky-KG"
+ },
+ {
+   "code": "1089",
+   "description": "Swahili",
+   "label": "sw-KE"
+ },
+ {
+   "code": "1090",
+   "description": "Turkmen",
+   "label": "tk-TM"
+ },
+ {
+   "code": "1091",
+   "description": "Uzbek (Latin)",
+   "label": "uz-Latn-UZ"
+ },
+ {
+   "code": "1092",
+   "description": "Tatar",
+   "label": "tt-RU"
+ },
+ {
+   "code": "1093",
+   "description": "Bengali (India)",
+   "label": "bn-IN"
+ },
+ {
+   "code": "1094",
+   "description": "Punjabi",
+   "label": "pa-IN"
+ },
+ {
+   "code": "1095",
+   "description": "Gujarati",
+   "label": "gu-IN"
+ },
+ {
+   "code": "1096",
+   "description": "Oriya",
+   "label": "or-IN"
+ },
+ {
+   "code": "1097",
+   "description": "Tamil",
+   "label": "ta-IN"
+ },
+ {
+   "code": "1098",
+   "description": "Telugu",
+   "label": "te-IN"
+ },
+ {
+   "code": "1099",
+   "description": "Kannada",
+   "label": "kn-IN"
+ },
+ {
+   "code": "1100",
+   "description": "Malayalam",
+   "label": "ml-IN"
+ },
+ {
+   "code": "1101",
+   "description": "Assamese",
+   "label": "as-IN"
+ },
+ {
+   "code": "1102",
+   "description": "Marathi",
+   "label": "mr-IN"
+ },
+ {
+   "code": "1103",
+   "description": "Sanskrit",
+   "label": "sa-IN"
+ },
+ {
+   "code": "1104",
+   "description": "Mongolian (Cyrillic)",
+   "label": "mn-MN"
+ },
+ {
+   "code": "1105",
+   "description": "Tibetan - People's Republic of China",
+   "label": "bo-CN"
+ },
+ {
+   "code": "1106",
+   "description": "Welsh",
+   "label": "cy-GB"
+ },
+ {
+   "code": "1107",
+   "description": "Khmer",
+   "label": "km-KH"
+ },
+ {
+   "code": "1108",
+   "description": "Lao",
+   "label": "lo-LA"
+ },
+ {
+   "code": "1109",
+   "description": "Burmese",
+   "label": "my-MM"
+ },
+ {
+   "code": "1110",
+   "description": "Galician",
+   "label": "gl-ES"
+ },
+ {
+   "code": "1111",
+   "description": "Konkani",
+   "label": "kok-IN"
+ },
+ {
+   "code": "1112",
+   "description": "Manipuri",
+   "label": "mni"
+ },
+ {
+   "code": "1113",
+   "description": "Sindhi - India",
+   "label": "sd-IN"
+ },
+ {
+   "code": "1114",
+   "description": "Syriac",
+   "label": "syr-SY"
+ },
+ {
+   "code": "1115",
+   "description": "Sinhalese - Sri Lanka",
+   "label": "si-LK"
+ },
+ {
+   "code": "1116",
+   "description": "Cherokee - United States",
+   "label": "chr-US"
+ },
+ {
+   "code": "1117",
+   "description": "Inuktitut",
+   "label": "iu-Cans-CA"
+ },
+ {
+   "code": "1118",
+   "description": "Amharic - Ethiopia",
+   "label": "am-ET"
+ },
+ {
+   "code": "1119",
+   "description": "Tamazight (Arabic)",
+   "label": "tmz"
+ },
+ {
+   "code": "1120",
+   "description": "Kashmiri (Arabic)",
+   "label": "ks-Arab-IN"
+ },
+ {
+   "code": "1121",
+   "description": "Nepali",
+   "label": "ne-NP"
+ },
+ {
+   "code": "1122",
+   "description": "Frisian - Netherlands",
+   "label": "fy-NL"
+ },
+ {
+   "code": "1123",
+   "description": "Pashto",
+   "label": "ps-AF"
+ },
+ {
+   "code": "1124",
+   "description": "Filipino",
+   "label": "fil-PH"
+ },
+ {
+   "code": "1125",
+   "description": "Divehi",
+   "label": "dv-MV"
+ },
+ {
+   "code": "1126",
+   "description": "Edo",
+   "label": "bin-NG"
+ },
+ {
+   "code": "1127",
+   "description": "Fulfulde - Nigeria",
+   "label": "fuv-NG"
+ },
+ {
+   "code": "1128",
+   "description": "Hausa - Nigeria",
+   "label": "ha-Latn-NG"
+ },
+ {
+   "code": "1129",
+   "description": "Ibibio - Nigeria",
+   "label": "ibb-NG"
+ },
+ {
+   "code": "1130",
+   "description": "Yoruba",
+   "label": "yo-NG"
+ },
+ {
+   "code": "1131",
+   "description": "Quecha - Bolivia",
+   "label": "quz-BO"
+ },
+ {
+   "code": "1132",
+   "description": "Sepedi",
+   "label": "nso-ZA"
+ },
+ {
+   "code": "1136",
+   "description": "Igbo - Nigeria",
+   "label": "ig-NG"
+ },
+ {
+   "code": "1137",
+   "description": "Kanuri - Nigeria",
+   "label": "kr-NG"
+ },
+ {
+   "code": "1138",
+   "description": "Oromo",
+   "label": "gaz-ET"
+ },
+ {
+   "code": "1139",
+   "description": "Tigrigna - Ethiopia",
+   "label": "ti-ER"
+ },
+ {
+   "code": "1140",
+   "description": "Guarani - Paraguay",
+   "label": "gn-PY"
+ },
+ {
+   "code": "1141",
+   "description": "Hawaiian - United States",
+   "label": "haw-US"
+ },
+ {
+   "code": "1142",
+   "description": "Latin",
+   "label": "la"
+ },
+ {
+   "code": "1143",
+   "description": "Somali",
+   "label": "so-SO"
+ },
+ {
+   "code": "1144",
+   "description": "Yi",
+   "label": "ii-CN"
+ },
+ {
+   "code": "1145",
+   "description": "Papiamentu",
+   "label": "pap-AN"
+ },
+ {
+   "code": "1152",
+   "description": "Uighur - China",
+   "label": "ug-Arab-CN"
+ },
+ {
+   "code": "1153",
+   "description": "Maori - New Zealand",
+   "label": "mi-NZ"
+ },
+ {
+   "code": "2049",
+   "description": "Arabic - Iraq",
+   "label": "ar-IQ"
+ },
+ {
+   "code": "2052",
+   "description": "Chinese - People's Republic of China",
+   "label": "zh-CN"
+ },
+ {
+   "code": "2055",
+   "description": "German - Switzerland",
+   "label": "de-CH"
+ },
+ {
+   "code": "2057",
+   "description": "English - United Kingdom",
+   "label": "en-GB"
+ },
+ {
+   "code": "2058",
+   "description": "Spanish - Mexico",
+   "label": "es-MX"
+ },
+ {
+   "code": "2060",
+   "description": "French - Belgium",
+   "label": "fr-BE"
+ },
+ {
+   "code": "2064",
+   "description": "Italian - Switzerland",
+   "label": "it-CH"
+ },
+ {
+   "code": "2067",
+   "description": "Dutch - Belgium",
+   "label": "nl-BE"
+ },
+ {
+   "code": "2068",
+   "description": "Norwegian (Nynorsk)",
+   "label": "nn-NO"
+ },
+ {
+   "code": "2070",
+   "description": "Portuguese - Portugal",
+   "label": "pt-PT"
+ },
+ {
+   "code": "2072",
+   "description": "Romanian - Moldava",
+   "label": "ro-MD"
+ },
+ {
+   "code": "2073",
+   "description": "Russian - Moldava",
+   "label": "ru-MD"
+ },
+ {
+   "code": "2074",
+   "description": "Serbian (Latin)",
+   "label": "sr-Latn-CS"
+ },
+ {
+   "code": "2077",
+   "description": "Swedish - Finland",
+   "label": "sv-FI"
+ },
+ {
+   "code": "2080",
+   "description": "Urdu - India",
+   "label": "ur-IN"
+ },
+ {
+   "code": "2092",
+   "description": "Azeri (Cyrillic)",
+   "label": "az-Cyrl-AZ"
+ },
+ {
+   "code": "2108",
+   "description": "Gaelic (Ireland)",
+   "label": "ga-IE"
+ },
+ {
+   "code": "2110",
+   "description": "Malay - Brunei Darussalam",
+   "label": "ms-BN"
+ },
+ {
+   "code": "2115",
+   "description": "Uzbek (Cyrillic)",
+   "label": "uz-Cyrl-UZ"
+ },
+ {
+   "code": "2117",
+   "description": "Bengali (Bangladesh)",
+   "label": "bn-BD"
+ },
+ {
+   "code": "2118",
+   "description": "Punjabi (Pakistan)",
+   "label": "pa-PK"
+ },
+ {
+   "code": "2128",
+   "description": "Mongolian (Mongolian)",
+   "label": "mn-Mong-CN"
+ },
+ {
+   "code": "2129",
+   "description": "Tibetan - Bhutan",
+   "label": "bo-BT"
+ },
+ {
+   "code": "2137",
+   "description": "Sindhi - Pakistan",
+   "label": "sd-PK"
+ },
+ {
+   "code": "2143",
+   "description": "Tamazight (Latin)",
+   "label": "tzm-Latn-DZ"
+ },
+ {
+   "code": "2144",
+   "description": "Kashmiri (Devanagari)",
+   "label": "ks-Deva-IN"
+ },
+ {
+   "code": "2145",
+   "description": "Nepali - India",
+   "label": "ne-IN"
+ },
+ {
+   "code": "2155",
+   "description": "Quecha - Ecuador",
+   "label": "quz-EC"
+ },
+ {
+   "code": "2163",
+   "description": "Tigrigna - Eritrea",
+   "label": "ti-ET"
+ },
+ {
+   "code": "3073",
+   "description": "Arabic - Egypt",
+   "label": "ar-EG"
+ },
+ {
+   "code": "3076",
+   "description": "Chinese - Hong Kong SAR",
+   "label": "zh-HK"
+ },
+ {
+   "code": "3079",
+   "description": "German - Austria",
+   "label": "de-AT"
+ },
+ {
+   "code": "3081",
+   "description": "English - Australia",
+   "label": "en-AU"
+ },
+ {
+   "code": "3082",
+   "description": "Spanish - Spain (Modern Sort)",
+   "label": "es-ES"
+ },
+ {
+   "code": "3084",
+   "description": "French - Canada",
+   "label": "fr-CA"
+ },
+ {
+   "code": "3098",
+   "description": "Serbian (Cyrillic)",
+   "label": "sr-Cyrl-CS"
+ },
+ {
+   "code": "3179",
+   "description": "Quecha - Peru",
+   "label": "quz-PE"
+ },
+ {
+   "code": "4097",
+   "description": "Arabic - Libya",
+   "label": "ar-LY"
+ },
+ {
+   "code": "4100",
+   "description": "Chinese - Singapore",
+   "label": "zh-SG"
+ },
+ {
+   "code": "4103",
+   "description": "German - Luxembourg",
+   "label": "de-LU"
+ },
+ {
+   "code": "4105",
+   "description": "English - Canada",
+   "label": "en-CA"
+ },
+ {
+   "code": "4106",
+   "description": "Spanish - Guatemala",
+   "label": "es-GT"
+ },
+ {
+   "code": "4108",
+   "description": "French - Switzerland",
+   "label": "fr-CH"
+ },
+ {
+   "code": "4122",
+   "description": "Croatian (Bosnia/Herzegovina)",
+   "label": "hr-BA"
+ },
+ {
+   "code": "5121",
+   "description": "Arabic - Algeria",
+   "label": "ar-DZ"
+ },
+ {
+   "code": "5124",
+   "description": "Chinese - Macao SAR",
+   "label": "zh-MO"
+ },
+ {
+   "code": "5127",
+   "description": "German - Liechtenstein",
+   "label": "de-LI"
+ },
+ {
+   "code": "5129",
+   "description": "English - New Zealand",
+   "label": "en-NZ"
+ },
+ {
+   "code": "5130",
+   "description": "Spanish - Costa Rica",
+   "label": "es-CR"
+ },
+ {
+   "code": "5132",
+   "description": "French - Luxembourg",
+   "label": "fr-LU"
+ },
+ {
+   "code": "5146",
+   "description": "Bosnian (Bosnia/Herzegovina)",
+   "label": "bs-Latn-BA"
+ },
+ {
+   "code": "6145",
+   "description": "Arabic - Morocco",
+   "label": "ar-MO"
+ },
+ {
+   "code": "6153",
+   "description": "English - Ireland",
+   "label": "en-IE"
+ },
+ {
+   "code": "6154",
+   "description": "Spanish - Panama",
+   "label": "es-PA"
+ },
+ {
+   "code": "6156",
+   "description": "French - Monaco",
+   "label": "fr-MC"
+ },
+ {
+   "code": "7169",
+   "description": "Arabic - Tunisia",
+   "label": "ar-TN"
+ },
+ {
+   "code": "7177",
+   "description": "English - South Africa",
+   "label": "en-ZA"
+ },
+ {
+   "code": "7178",
+   "description": "Spanish - Dominican Republic",
+   "label": "es-DO"
+ },
+ {
+   "code": "7180",
+   "description": "French - West Indies",
+   "label": "fr-029"
+ },
+ {
+   "code": "8193",
+   "description": "Arabic - Oman",
+   "label": "ar-OM"
+ },
+ {
+   "code": "8201",
+   "description": "English - Jamaica",
+   "label": "en-JM"
+ },
+ {
+   "code": "8202",
+   "description": "Spanish - Venezuela",
+   "label": "es-VE"
+ },
+ {
+   "code": "8204",
+   "description": "French - Reunion",
+   "label": "fr-RE"
+ },
+ {
+   "code": "9217",
+   "description": "Arabic - Yemen",
+   "label": "ar-YE"
+ },
+ {
+   "code": "9225",
+   "description": "English - Caribbean",
+   "label": "en-029"
+ },
+ {
+   "code": "9226",
+   "description": "Spanish - Colombia",
+   "label": "es-CO"
+ },
+ {
+   "code": "9228",
+   "description": "French - Democratic Rep. of Congo",
+   "label": "fr-CG"
+ },
+ {
+   "code": "10241",
+   "description": "Arabic - Syria",
+   "label": "ar-SY"
+ },
+ {
+   "code": "10249",
+   "description": "English - Belize",
+   "label": "en-BZ"
+ },
+ {
+   "code": "10250",
+   "description": "Spanish - Peru",
+   "label": "es-PE"
+ },
+ {
+   "code": "10252",
+   "description": "French - Senegal",
+   "label": "fr-SN"
+ },
+ {
+   "code": "11265",
+   "description": "Arabic - Jordan",
+   "label": "ar-JO"
+ },
+ {
+   "code": "11273",
+   "description": "English - Trinidad",
+   "label": "en-TT"
+ },
+ {
+   "code": "11274",
+   "description": "Spanish - Argentina",
+   "label": "es-AR"
+ },
+ {
+   "code": "11276",
+   "description": "French - Cameroon",
+   "label": "fr-CM"
+ },
+ {
+   "code": "12289",
+   "description": "Arabic - Lebanon",
+   "label": "ar-LB"
+ },
+ {
+   "code": "12297",
+   "description": "English - Zimbabwe",
+   "label": "en-ZW"
+ },
+ {
+   "code": "12298",
+   "description": "Spanish - Ecuador",
+   "label": "es-EC"
+ },
+ {
+   "code": "12300",
+   "description": "French - Cote d'Ivoire",
+   "label": "fr-CI"
+ },
+ {
+   "code": "13313",
+   "description": "Arabic - Kuwait",
+   "label": "ar-KW"
+ },
+ {
+   "code": "13321",
+   "description": "English - Philippines",
+   "label": "en-PH"
+ },
+ {
+   "code": "13322",
+   "description": "Spanish - Chile",
+   "label": "es-CL"
+ },
+ {
+   "code": "13324",
+   "description": "French - Mali",
+   "label": "fr-ML"
+ },
+ {
+   "code": "14337",
+   "description": "Arabic - U.A.E.",
+   "label": "ar-AE"
+ },
+ {
+   "code": "14345",
+   "description": "English - Indonesia",
+   "label": "en-ID"
+ },
+ {
+   "code": "14346",
+   "description": "Spanish - Uruguay",
+   "label": "es-UY"
+ },
+ {
+   "code": "14348",
+   "description": "French - Morocco",
+   "label": "fr-MA"
+ },
+ {
+   "code": "15361",
+   "description": "Arabic - Bahrain",
+   "label": "ar-BH"
+ },
+ {
+   "code": "15369",
+   "description": "English - Hong Kong SAR",
+   "label": "en-HK"
+ },
+ {
+   "code": "15370",
+   "description": "Spanish - Paraguay",
+   "label": "es-PY"
+ },
+ {
+   "code": "15372",
+   "description": "French - Haiti",
+   "label": "fr-HT"
+ },
+ {
+   "code": "16385",
+   "description": "Arabic - Qatar",
+   "label": "ar-QA"
+ },
+ {
+   "code": "16393",
+   "description": "English - India",
+   "label": "en-IN"
+ },
+ {
+   "code": "16394",
+   "description": "Spanish - Bolivia",
+   "label": "es-BO"
+ },
+ {
+   "code": "17417",
+   "description": "English - Malaysia",
+   "label": "en-MY"
+ },
+ {
+   "code": "17418",
+   "description": "Spanish - El Salvador",
+   "label": "es-SV"
+ },
+ {
+   "code": "18441",
+   "description": "English - Singapore",
+   "label": "en-SG"
+ },
+ {
+   "code": "18442",
+   "description": "Spanish - Honduras",
+   "label": "es-HN"
+ },
+ {
+   "code": "19466",
+   "description": "Spanish - Nicaragua",
+   "label": "es-NI"
+ },
+ {
+   "code": "20490",
+   "description": "Spanish - Puerto Rico",
+   "label": "es-PR"
+ },
+ {
+   "code": "21514",
+   "description": "Spanish - United States",
+   "label": "es-US"
+ },
+ {
+   "code": "58378",
+   "description": "Spanish - Latin America",
+   "label": "es-419"
+ },
+ {
+   "code": "58380",
+   "description": "French - North Africa",
+   "label": "fr-015"
+ }
+]
