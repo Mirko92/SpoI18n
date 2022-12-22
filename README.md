@@ -47,7 +47,7 @@ ConvertFrom-SpoI18nCsv  -fileName "<output-file-name>" `
 
 ## Getting Started
 
-[Powershell Gallery](https://www.powershellgallery.com/packages/SpoI18n/0.1.0)
+[Powershell Gallery](https://www.powershellgallery.com/packages/SpoI18n)
 
 1.	Installation process
   ```
