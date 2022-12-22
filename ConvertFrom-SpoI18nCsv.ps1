@@ -20,8 +20,8 @@ Destination folder
 
 .EXAMPLE
 ConvertFrom-SpoI18nCsv  -src "C:/Folder/File.csv" `
-                    -fileName "MyResxFile" `
-                    -outputPath "C:/OutputFolder";
+                        -fileName "MyResxFile" `
+                        -outputPath "C:/OutputFolder";
 #>
 function ConvertFrom-SpoI18nCsv {
   param (
