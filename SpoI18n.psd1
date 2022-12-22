@@ -21,16 +21,16 @@ ModuleVersion = '0.1.0'
 GUID = '5363cffe-111c-4eff-977c-78a68f6740b2'
 
 # Author of this module
-Author = 'mirko.petrelli'
+Author = "mirko.petrelli"
 
 # Company or vendor of this module
-CompanyName = ''
+CompanyName = 'no company'
 
 # Copyright statement for this module
 Copyright = '(c) mirko.petrelli. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'A Powershell module to easy handle i18n in SharePoint online sites.'
 
 # Minimum version of the PowerShell engine required by this module
 # PowerShellVersion = ''
@@ -70,14 +70,14 @@ Copyright = '(c) mirko.petrelli. All rights reserved.'
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = @(
-    Get-SpoI18nCsv
-    ConvertFrom-SpoI18nCsv
+    "Get-SpoI18nCsv",
+    "ConvertFrom-SpoI18nCsv"
 )
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @(
-    Get-I18nSiteCsv
-    ConvertFrom-SpoI18nCsv
+    "Get-I18nSiteCsv",
+    "ConvertFrom-SpoI18nCsv"
 )
 
 # Variables to export from this module

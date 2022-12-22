@@ -8,9 +8,11 @@ It let you to extract CSV (easy to edit), copy values cross CSV files (DRY) and 
 
 ## Getting Started
 
+[Powerhshell Gallery](https://www.powershellgallery.com/packages/SpoI18n/0.1.0)
+
 1.	Installation process
   ```
-  Import-Module "<PathToModuleFolder>\SpoI18n\SpoI18n.psm1" -Force;
+  Install-Module -Name SpoI18n;
   ```
 2.	Software dependencies
   ```
