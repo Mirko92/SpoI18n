@@ -7,7 +7,7 @@ In order to have matches between source and destination file,
 it composes the keys by: 
  - splitting destination key
  - replace site's specific GUID 
- - looking for the same value in the defaul locale
+ - looking for the same value in the default locale
 
 Then it uses the keys to get locale value and copies it;
 
@@ -26,16 +26,16 @@ Default Locale. Used as a key, it helps to find match.
 "Eg: en-US"
 
 .PARAMETER replace
-Is set, replace destination file; 
-Otherwise it will be created a new file, in the same folder, named:
+If set, replace destination file; 
+Otherwise a new file will be created, in the same folder, named:
 "<DestinationNameFile>_<DateFormat[yyyMMddHHmm]>.csv"
 
 .EXAMPLE
-Copy-SpoI18nCsv -src "C:\Users\<userName>\Folder1\Folder2\SourceFile.csv" `
-              -dest "C:\Users\<userName>\Folder1\Folder2\DestinationFile.csv" `
-              -locale it-IT `
-              -localeKey en-US `
-              -replace;
+Copy-SpoI18nCsv -src  "<path-to-folder>\<src-filename>.csv" `
+                -dest "<path-to-folder>\<dest-filename>.csv" `
+                -locale it-IT `
+                -localeKey en-US `
+                -replace;
 #>
 function Copy-SpoI18nCsv {
   param (
@@ -223,7 +223,6 @@ function Copy-SpoI18nCsv {
 --------------------------------------------------------
 I'm sorry, I can't find any matches for these keys.
 I almost did it all, be grateful.
-I'm tired and i have no time.
 
 If you can do better, feel free to make a pull-request. 
 --------------------------------------------------------
