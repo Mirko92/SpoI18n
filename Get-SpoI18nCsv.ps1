@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-Extract a CSV for ContentTypes, Fields, Lists of a SPO site.
+Extract a CSV for ContentTypes, Fields, Lists and Views of a SPO site.
 
 .DESCRIPTION
 CSV format: 
@@ -30,7 +30,6 @@ eg: "Custom content types"
 It allows you to restrict the Fields number to translate;
 Don't use wildcards, they will be added automatically at the begin and the end of pattern.
 eg: "CUSTOM_"
-TODO: Pattern implica che magari possa fargli usare una regex 
 
 .PARAMETER lists
 It allows you to specify wich lists you want to translate. 
