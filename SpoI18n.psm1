@@ -7,5 +7,6 @@
 . $PSScriptRoot\ConvertFrom-SpoI18nCsv.ps1;
 . $PSScriptRoot\Copy-SpoI18nCsv.ps1;
 
+import-module $PSScriptRoot\utils\Locales.ps1;
 
 Export-ModuleMember -Function Get-SpoI18nCsv, ConvertFrom-SpoI18nCsv, Copy-SpoI18nCsv, LocaleArgumentCompleter ;
