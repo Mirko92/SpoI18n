@@ -22,14 +22,17 @@ Output file destination
 List of locales, including default locale, to translate the site.
 eg. en-US, it-IT
 
-.PARAMETER ctGroups
-It allows you to restrict the ContenTypes number to translate.
-eg: "Custom content types"
-
 .PARAMETER fieldsPattern
 It allows you to restrict the Fields number to translate;
 Don't use wildcards, they will be added automatically at the begin and the end of pattern.
 eg: "CUSTOM_"
+
+.PARAMETER ctGroups
+It allows you to restrict the ContenTypes number to translate.
+eg: "Custom content types"
+
+.PARAMETER noCtGRoups
+It allows you to exclude ContentType;
 
 .PARAMETER lists
 It allows you to specify wich lists you want to translate. 
@@ -60,12 +63,14 @@ function Get-SpoI18nCsv {
     [string[]] $locales,
     
     [string[]] $ctGroups,
+
+    [string[]] $lists,
     
     [string] $fieldsPattern,
 
-    [string[]] $lists,
+    [switch] $includeListViews,
 
-    [switch] $includeListViews
+    [switch] $noCtGroups
   )
 
   $localesInfo = Get-Locales | Where-Object { $_.label -in $locales };
@@ -95,8 +100,13 @@ function Get-SpoI18nCsv {
   
   Write-Host "Found #$($siteFields.Count) Fields";
 
+  $fieldCounter = 0;
   foreach ($field in $siteFields) {
-    Write-Host "Processing Field: $($field.Title)";
+    Write-Progress  -PercentComplete (++$fieldCounter / $siteFields.Count  * 100) `
+                    -Activity "Processing Field: $($field.Title)" `
+                    -Status  "Processing Field $($fieldCounter) of $($siteFields.Count)" `
+                    -Completed:($siteFields.Count -eq $fieldCounter)
+
 
     $csvWriter.AddRow(
       "00000000000000000000000000000000_FieldTitle$($field.InternalName)", 
@@ -106,30 +116,35 @@ function Get-SpoI18nCsv {
   #endregion
 
   #region CONTENT TYPES  
-  $siteCTS = if ($ctGroups.Count -gt 0) {
-    (Get-PnPContentType | Where-Object Group -in $ctGroups)
-  } else { 
-    Get-PnPContentType;
-  }
-  $siteCTS = $siteCTS | Sort-Object Name;
-
-  Write-Host "Found #$($siteCTS.Count) Content types";
-
-  foreach ($ct in $siteCTS) {
-    Write-Host "Processing CT: $($ct.Name)";
-
-    $contentTypeName = $ct.Name;
-    $contentTypeDesc = $ct.Description -eq "" ? "Descrizione $contentTypeName" : $ct.Description;
-
-    $csvWriter.AddRow(
-      "00000000000000000000000000000000_CTName$($ct.Id)", 
-      $contentTypeName
-    );
-    $csvWriter.AddRow(
-      "00000000000000000000000000000000_CTDesc$($ct.Id)", 
-      $contentTypeDesc, 
-      $true
-    );
+  if (!$noCtGroups) {
+    $siteCTS = if ($ctGroups.Count -gt 0) {
+      (Get-PnPContentType | Where-Object Group -in $ctGroups)
+    } else { 
+      Get-PnPContentType;
+    }
+    $siteCTS = $siteCTS | Sort-Object Name;
+  
+    Write-Host "Found #$($siteCTS.Count) Content types";
+  
+    $ctCounter = 0;
+    foreach ($ct in $siteCTS) {
+      Write-Progress  -PercentComplete (++$ctCounter / $siteCTS.Count  * 100) `
+                      -Activity "Processing CT: $($ct.Name)" `
+                      -Status  "Processing CT $($ctCounter) of $($siteCTS.Count)";
+  
+      $contentTypeName = $ct.Name;
+      $contentTypeDesc = $ct.Description -eq "" ? "Descrizione $contentTypeName" : $ct.Description;
+  
+      $csvWriter.AddRow(
+        "00000000000000000000000000000000_CTName$($ct.Id)", 
+        $contentTypeName
+      );
+      $csvWriter.AddRow(
+        "00000000000000000000000000000000_CTDesc$($ct.Id)", 
+        $contentTypeDesc, 
+        $true
+      );
+    }
   }
   #endregion
 
@@ -143,9 +158,16 @@ function Get-SpoI18nCsv {
   $siteLists = $siteLists | Sort-Object Title
 
   Write-Host "Found #$($siteLists.Count) Lists";
+  Write-Host "------------------------------------------------";
 
+  $listCounter = 0;
   foreach ($list in $siteLists) {
     Write-Host "Processing list: $($list.Title)";
+    Write-Progress  -PercentComplete (++$listCounter / $siteLists.Count  * 100) `
+                    -Activity "Processing list: $($list.Title)" `
+                    -Status  "Processing list $($listCounter) of $($siteLists.Count)" `
+                    -Id 100;
+
     $listID = [string]$list.Id; 
 
     # List title 
@@ -167,8 +189,13 @@ function Get-SpoI18nCsv {
     $listCTS = Get-PnPContentType -List $listID | Sort-Object Name;
     Write-Host "Found #$($listCTS.Count) Content Types on this list";
 
+    $ctListCounter = 0;
     foreach ($listCT in $listCTS) {
-      Write-Host "Processing CT: $($listCT.Name)";
+      Write-Progress  -PercentComplete (++$ctListCounter / $listCTS.Count  * 100) `
+                      -Activity "Processing CT: $($listCT.Name)" `
+                      -Status  "Processing CT $($ctListCounter) of $($listCTS.Count)" `
+                      -ParentId 100 `
+                      -Id 200;
 
       $csvWriter.AddRow(
         "$($listKey)_CTName$($listCT.Id)", 
@@ -189,8 +216,13 @@ function Get-SpoI18nCsv {
 
     Write-Host "Found #$($listFields.Count) fields on this list";
 
+    $listFieldsCounter = 0;
     foreach ($listField in $listFields) {
-      Write-Host "Processing field: $($listField.Title)";
+      Write-Progress  -PercentComplete (++$listFieldsCounter / $listFields.Count  * 100) `
+                      -Activity "Processing field: $($listField.Title)" `
+                      -Status  "Processing field $($listFieldsCounter) of $($listFields.Count)" `
+                      -ParentId 100 `
+                      -Id 300;
 
       $csvWriter.AddRow(
         "$($listKey)_FieldTitle$($listField.InternalName)", 
@@ -203,8 +235,13 @@ function Get-SpoI18nCsv {
     if ($includeListViews) {
       $listViews = Get-PnPView -List $listID | Sort-Object Title;
 
+      $listViewsCounter = 0;
       foreach ($listView in $listViews) {
-        Write-Host "Processing View: $($listView.Title)";
+        Write-Progress  -PercentComplete (++$listViewsCounter / $listViews.Count  * 100) `
+                        -Activity "Processing View: $($listView.Title)" `
+                        -Status  "Processing View $($listViewsCounter) of $($listViews.Count)" `
+                        -ParentId 100 `
+                        -Id 400;
       
         $csvWriter.AddRow(
           "$($listKey)_ViewTitle{$($listView.Id.ToString().ToUpper())}", 
@@ -213,6 +250,9 @@ function Get-SpoI18nCsv {
       }
     }
     #endregion
+
+    
+    Write-Host "------------------------------------------------";
   }
 
   $parentFolderPath = Split-Path $outputPath -Parent;
