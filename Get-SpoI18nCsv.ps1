@@ -28,11 +28,11 @@ Don't use wildcards, they will be added automatically at the begin and the end o
 eg: "CUSTOM_"
 
 .PARAMETER ctGroups
-It allows you to restrict the ContenTypes number to translate.
+It allows you to restrict the ContentTypes number to translate.
 eg: "Custom content types"
 
 .PARAMETER noCtGRoups
-It allows you to exclude ContentType;
+It allows you to exclude ContentTypes;
 
 .PARAMETER lists
 It allows you to specify wich lists you want to translate. 
