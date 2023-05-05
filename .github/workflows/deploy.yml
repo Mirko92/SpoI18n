@@ -12,32 +12,19 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  publish-to-gallery:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      - name: Set up Powershell
-        uses: microsoft/setup-powershell@v1
-        with:
-          powhershell-version: '7.3'
-          
-      - name: Install required modules
-        run: Install-Module -Name PowershellGet -Force
-      
-      - name: Publish module to PowerShell Gallery
-        run: |
-          Write-Host pwd; 
-          Write-Host $env:NUGET_API_TOKEN
-          ls;
+      - name: Build and publish
         env:
-          NUGET_API_TOKEN: ${{ secrets.NUGET_API_TOKEN }}
-
+          NUGET_KEY: ${{ secrets.NUGET_API_TOKEN }}
+        shell: pwsh
+        run: |
+          Write-Host "TEST 1"
+          ls;
+          
+          #./build.ps1 -Path /tmp/samplemodule
+          #Publish-Module -Path /tmp/samplemodule -NuGetApiKey $env:NUGET_KEY -Verbose
