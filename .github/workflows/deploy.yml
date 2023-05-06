@@ -23,5 +23,5 @@ jobs:
           NUGET_KEY: ${{ secrets.NUGET_API_TOKEN }}
         shell: pwsh
         run: |
-          . ./.github/workflows/IncrementVersion;
-          Publish-Module -Path ./ -NuGetApiKey $env:NUGET_KEY;
+          #. ./.github/workflows/IncrementVersion;
+          #Publish-Module -Path ./ -NuGetApiKey $env:NUGET_KEY;
