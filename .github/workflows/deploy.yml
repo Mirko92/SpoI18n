@@ -23,8 +23,5 @@ jobs:
           NUGET_KEY: ${{ secrets.NUGET_API_TOKEN }}
         shell: pwsh
         run: |
-          Write-Host "TEST 1"
-          ls;
-          
-          #./build.ps1 -Path /tmp/samplemodule
-          #Publish-Module -Path /tmp/samplemodule -NuGetApiKey $env:NUGET_KEY -Verbose
+          . ./.github/workflows/IncrementVersion;
+          Publish-Module -Path ./ -NuGetApiKey $env:NUGET_KEY;
