@@ -25,9 +25,9 @@ if ( $currentVersion.CompareTo($remoteVersion) -gt 0 ) {
 
   Publish-Module -Path ./ -NuGetApiKey $nugetApiKey;
 
-  return 0;
+  exit 0;
 } else {
-  Write-Host "Current version is less or equal to remote version. No need to deploy."
-
-  return 1;
+  $errorMsg = "Current version is less or equal to remote version. No need to deploy.";
+  Write-Error $errorMsg;
+  throw $errorMsg;
 }
