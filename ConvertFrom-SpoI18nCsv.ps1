@@ -18,6 +18,9 @@ Path of the CSV file.
 .PARAMETER outputPath
 Destination folder
 
+.PARAMETER delimiter
+Choose the csv delimiter based on the src file delimiter
+
 .EXAMPLE
 ConvertFrom-SpoI18nCsv  -src "C:/Folder/File.csv" `
                         -fileName "MyResxFile" `
@@ -34,7 +37,9 @@ function ConvertFrom-SpoI18nCsv {
     [string] $outputPath = ".",
     
     [ArgumentCompleter({ LocaleArgumentCompleter @args })]
-    [string[]] $localesToSkip
+    [string[]] $localesToSkip,
+
+    [string] $delimiter = ","
   )
 
   $template = "`t<data name=`"####KEY####`" xml:space=`"preserve`">" +
@@ -45,7 +50,7 @@ function ConvertFrom-SpoI18nCsv {
   $fileSeedPath = "$PSScriptRoot\assets\_seed.resx";
   $fileSeed     = Get-Content -Path $fileSeedPath;
 
-  $source = Import-Csv -Path $src -Encoding utf8BOM;
+  $source = Import-Csv -Path $src -Encoding utf8BOM -Delimiter $delimiter;
 
   if ($source.Count -le 0) {
     throw "Src file is empty!"

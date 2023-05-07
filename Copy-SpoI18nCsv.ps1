@@ -30,6 +30,10 @@ If set, replace destination file;
 Otherwise a new file will be created, in the same folder, named:
 "<DestinationNameFile>_<DateFormat[yyyMMddHHmm]>.csv"
 
+.PARAMETER delimiter
+Choose the delimiter base on the delimiter used in the src/dest files.
+Default value is: ","
+
 .EXAMPLE
 Copy-SpoI18nCsv -src  "<path-to-folder>\<src-filename>.csv" `
                 -dest "<path-to-folder>\<dest-filename>.csv" `
@@ -53,11 +57,13 @@ function Copy-SpoI18nCsv {
     [ArgumentCompleter({ LocaleArgumentCompleter @args })]
     [string] $localeKey,
 
+    [string] $delimiter = ",",
+
     [switch] $replace
   )
 
-  $source      = Import-Csv -Path $src  -Encoding utf8BOM;
-  $destination = Import-Csv -Path $dest -Encoding utf8BOM;
+  $source      = Import-Csv -Path $src  -Encoding utf8BOM -Delimiter $delimiter;
+  $destination = Import-Csv -Path $dest -Encoding utf8BOM -Delimiter $delimiter;
 
   $srcHash  = $source       | Select-Object -Skip 1 | Group-Object Key -AsHashTable -AsString;
   $destHash = $destination  | Select-Object -Skip 1 | Group-Object Key -AsHashTable -AsString;

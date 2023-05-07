@@ -31,6 +31,9 @@ eg: "CUSTOM_"
 It allows you to restrict the ContentTypes number to translate.
 eg: "Custom content types"
 
+.PARAMETER delimiter
+Choose the csv delimiter, default value is ",";
+
 .PARAMETER noCtGRoups
 It allows you to exclude ContentTypes;
 
@@ -69,6 +72,8 @@ function Get-SpoI18nCsv {
     [string] $fieldsPattern,
 
     [switch] $includeListViews,
+
+    [string] $delimiter = ",",
 
     [switch] $noCtGroups
   )
@@ -262,5 +267,9 @@ function Get-SpoI18nCsv {
 
   $csvResult = $csvWriter.csvResult;
 
-  $csvResult | Export-Csv -Path "$outputPath" -UseQuotes AsNeeded -Encoding utf8BOM -Force;
+  $csvResult | Export-Csv -Path "$outputPath" `
+                          -UseQuotes AsNeeded `
+                          -Encoding utf8BOM `
+                          -Delimiter $delimiter `
+                          -Force;
 }
