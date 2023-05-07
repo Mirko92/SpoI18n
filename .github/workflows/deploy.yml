@@ -23,4 +23,4 @@ jobs:
           NUGET_KEY: ${{ secrets.NUGET_API_TOKEN }}
         shell: pwsh
         run: |
-          . ./.github/workflows/Deploy.ps1;
+          . ./.github/workflows/Deploy.ps1 -nugetApiKey $env:NUGET_KEY;
