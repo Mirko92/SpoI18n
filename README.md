@@ -1,4 +1,4 @@
-# SPO-I18n
+# SpoI18n
 A Powershell module to easy handle i18n in SharePoint online sites.
 
 This is a PowerShell script that generates a CSV file in a specific format. 

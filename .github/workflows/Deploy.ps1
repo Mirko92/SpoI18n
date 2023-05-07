@@ -3,6 +3,8 @@ param (
   [string] $nugetApiKey
 )
 
+Install-Module -Name PnP.PowerShell -Scope CurrentUser -Force;
+
 $moduleName   = "SpoI18n";
 $manifestPath = "./SpoI18n.psd1";
 
